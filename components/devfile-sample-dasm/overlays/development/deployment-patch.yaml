@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dasm
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0066-tenant/tkrw-pr714-0075-0066-app/devfile-sample-dasm@sha256:ef04133da0d69b35e5800238a4d73dfdeacd8edcaab58cf7811c20fed684a3ea
+        name: my-nodejs
+        resources: {}
+status: {}
