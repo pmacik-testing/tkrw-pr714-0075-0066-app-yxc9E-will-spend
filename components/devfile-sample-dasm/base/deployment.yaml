@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-dasm
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0066-tenant/tkrw-pr714-0075-0066-app/devfile-sample-dasm@sha256:ef04133da0d69b35e5800238a4d73dfdeacd8edcaab58cf7811c20fed684a3ea
         name: my-nodejs
         ports:
         - containerPort: 3001
